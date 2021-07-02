@@ -1,5 +1,6 @@
 package model;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,9 +15,9 @@ public class Product {
 	private Date expirationDate;
 	private String productDescription;
 	
+	public Product() {}
 	public Product(String productID, String category, String productName, float price, float quantity,
             Date importDate, Date saleDate, Date expirationDate, String productDescription){
-		
 		 this.productID = productID;
 		 this.category = category;
 		 this.productName = productName;
@@ -49,7 +50,7 @@ public class Product {
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
-	public double getPrice() {
+	public float getPrice() {
 		return price;
 	}
 	public void setPrice(float price) {
@@ -86,7 +87,7 @@ public class Product {
 		this.productDescription = productDescription;
 	}
 
-	public double getQuantity() {
+	public float getQuantity() {
 		return quantity;
 	}
 

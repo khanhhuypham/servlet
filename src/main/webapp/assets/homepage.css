@@ -1,0 +1,64 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+
+header div{
+    width: 1200px;
+    margin: auto;
+}
+
+main{
+    width: 1200px;
+    margin: auto;
+}
+
+.item {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+  }
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(0,0,0,0.8);
+    z-index: 1;
+}
+
+.item-img:hover .overlay {
+    opacity: 1;
+}
+
+.wrap {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+
